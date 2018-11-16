@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
     <title>Colmar Academy</title>
   </head>
   <body>
@@ -9,31 +11,32 @@
     <!-- Header -->
 
     <header>
-      <div class="image-container">
-        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy">
+      <div class="header-logo">
+        <div class="image-container">
+          <img src="./resources/images/ic-logo.svg" alt="Colmar Academy">
+        </div>
+        <div class="text-container">
+          <span class="title1">COLMAR</span><span class="title2">ACADEMY</span>
+        </div>
       </div>
       <nav>
-        <ul>
-          <li>On Campus</li>
-          <li>Online</li>
-          <li>For companies</li>
-          <li>Sign in</li>
-        </ul>
+        <span><a href="#">On Campus</a></span>
+        <span><a href="#">Online</a></span>
+        <span><a href="#">For Companies</a></span>
+        <span><a href="#">Sign in</a></span>
       </nav>
     </header>
 
     <!-- Banner Section -->
 
-    <div class="banner container">
+    <div class="banner">
       <div class="image-container">
         <img src="./resources/images/banner.jpg" alt="Students Studying">
       </div>
       <div class="text-container">
         <h2>Learn something new everyday</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-      </div>
-      <div class="button">
-        <h4>Start here</h4>
+        <h4 class="button">Start here</h4>
       </div>
     </div>
 
@@ -198,6 +201,6 @@
       <span><a href="#">Terms</a></span>
       <span><a href="#">Privacy</a></span>
     </footer>
-    
+
   </body>
 </html>
