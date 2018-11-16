@@ -47,19 +47,56 @@ header .text-container .title2{
 /* Banner Styles */
 
 .banner {
+  position: relative;
   width: 100%;
   background-color: lightgrey;
+}
+
+.banner .container {
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.banner .image-container img {
-  width: 60%;
+.banner img {
+  width: 650px;
   margin: 2rem 1.5rem;
 }
 
 .banner .text-container {
-  padding: 2rem 2rem;
+  width: 550px;
+  padding-top: 2rem;
+  padding-right: 7rem;
+  padding-bottom: 2rem;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.banner .text-container h2 {
+  font-size: 2.5rem;
+  color: #383838;
+  margin-bottom: 8px;
+  padding: 0.5rem 2rem;
+}
+
+.banner .text-container h3 {
+  font-size: 1.5rem;
+  color: #383838;
+  margin-bottom: 8px;
+  padding: 0.5rem 2rem;
+}
+
+.banner .text-container h4 {
+  height: 1rem;
+  width: 8rem;
+  color: white;
+  background-color: #383838;
+  padding: 0.5rem 5rem;
+  text-align: center;
+
 }
 
 /* Guide Styles */
