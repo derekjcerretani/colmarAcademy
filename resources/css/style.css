@@ -44,70 +44,66 @@ header .text-container .title2{
   color: darkgrey;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 /* Banner Styles */
 
 .banner {
-  position: relative;
+  display: flex;
   width: 100%;
   background-color: lightgrey;
 }
 
 .banner .container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+}
+
+.banner .container .image-container {
+  display: flex;
+  /* border: 1px dotted black; */
 }
 
 .banner img {
-  width: 650px;
+  width: 675px;
+  height: 500px;
   margin: 2rem 1.5rem;
 }
 
-.banner .text-container {
-  width: 550px;
-  padding-top: 2rem;
-  padding-right: 7rem;
-  padding-bottom: 2rem;
-  padding-left: 0.5rem;
+.banner .container .text-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  justify-content: center;
+  margin-left: 24px;
+  /* border: 1px dotted black; */
 }
 
-.banner .text-container h2 {
-  font-size: 2.5rem;
-  color: #383838;
-  margin-bottom: 8px;
-  padding: 0.5rem 2rem;
-}
-
-.banner .text-container h3 {
-  font-size: 1.5rem;
-  color: #383838;
-  margin-bottom: 8px;
-  padding: 0.5rem 2rem;
-}
-
-.banner .text-container h4 {
-  height: 1rem;
-  width: 8rem;
-  color: white;
-  background-color: #383838;
-  padding: 0.5rem 5rem;
-  text-align: center;
-
+.banner h2 {
+  font-weight: bold;
+  color: grey;
+  font-size: 2rem;
 }
 
 /* Guide Styles */
 
 .guide {
-  width: 100%;
-  background-color: white;
   display: flex;
 }
 
-.guide .image-container img {
-  width: 60%;
+.guide .container-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.guide .container-left .image-container-left {
+  display: flex;
+}
+
+.guide .container-left .image-container-left img {
+  width: 675px;
+  height: 400px;
   margin: 2rem 1.5rem;
 }
