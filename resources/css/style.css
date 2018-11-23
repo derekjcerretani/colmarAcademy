@@ -78,13 +78,28 @@ header .text-container .title2{
   flex-direction: column;
   justify-content: center;
   margin-left: 24px;
+  margin-right: 12rem;
   /* border: 1px dotted black; */
 }
+.banner h1 {
+  font-weight: bold;
+  color: rgb(76, 76, 76);
+  font-size: 2.25rem;
+  padding-bottom: 1.5rem;
 
+}
 .banner h2 {
   font-weight: bold;
-  color: grey;
-  font-size: 2rem;
+  color: rgb(79, 78, 76);
+  font-size: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.button {
+  color: white;
+  background-color: rgb(76, 76, 76);
+  padding: 0.5rem 1.5rem;
+  text-align: center;
 }
 
 /* Guide Styles */
@@ -106,4 +121,26 @@ header .text-container .title2{
   width: 675px;
   height: 400px;
   margin: 2rem 1.5rem;
+}
+
+.guide .container-left .text-container-left {
+  width: 675px;
+  height: 400px;
+}
+
+.guide .container-left .text-container-left h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: rgb(76,76,76);
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.guide .container-left .text-container-left .text {
+  font-size: 1rem;
+  color: rgb(76, 76, 76);
+  margin: 0rem 1.5rem 2rem 1.5rem;
+}
+
+.guide .container-left .text-container-left #title {
+  margin-left: 1.5rem;
 }
