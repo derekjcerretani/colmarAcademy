@@ -219,20 +219,70 @@ header .text-container .title2{
 
 /* Class Options Section */
 
+.boxes {
+  background-color: lightgrey;
+  padding: 2rem 4.5rem;
+}
+
+.boxes span{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(76,76,76);
+}
+
 .class-options {
   display: flex;
 }
 
 .classes {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4.5rem;
 }
 
 .class {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .class .image-container img {
   width: 300px;
   height: 150px;
+}
+
+.class .text-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.class .text-container .course-title {
+  font-size: 1.25rem;
+  padding: 2rem 1rem 0rem 1rem;
+  text-align: left;
+}
+
+.class .text-container .courses {
+  font-size: 1rem;
+  padding: 0.5rem 1rem 0rem 1rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+.class .text-container .description {
+  font-size: 0.75rem;
+  margin: 0.5rem 1rem 0rem 1rem;
+  text-align: left;
+  font-weight: normal;
 }
