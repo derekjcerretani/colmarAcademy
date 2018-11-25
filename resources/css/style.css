@@ -261,6 +261,8 @@ header .text-container .title2{
 .class .text-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
   width: 300px;
   height: 150px;
   background-color: white;
