@@ -107,7 +107,7 @@ header .text-container .title2{
 
 .guide {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Guide Style Left */
@@ -130,7 +130,6 @@ header .text-container .title2{
 
 .guide .container-left .text-container-left {
   width: 675px;
-  height: 400px;
 }
 
 .guide .container-left .text-container-left h2 {
@@ -144,6 +143,7 @@ header .text-container .title2{
   font-size: 1rem;
   color: rgb(76, 76, 76);
   margin: 0rem 1.5rem 2rem 1.5rem;
+  line-height: 1.25rem;
 }
 
 .guide .container-left .text-container-left #title {
@@ -260,9 +260,7 @@ header .text-container .title2{
 
 .class .text-container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-
   width: 300px;
   height: 150px;
   background-color: white;
@@ -287,4 +285,54 @@ header .text-container .title2{
   margin: 0.5rem 1rem 0rem 1rem;
   text-align: left;
   font-weight: normal;
+  line-height: 1rem;
+}
+
+/* Thesis Container  */
+
+.thesis {
+  margin-top: 2rem;
+}
+
+.thesis span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(76,76,76);
+}
+
+.thesis-container {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.thesis-container-left {
+  display: flex;
+  flex-direction: column;
+}
+
+#video-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.thesis-container-left .text-container-left {
+  margin-left: 1.5rem;
+  width: 675px;
+}
+
+/* Right Styles  */
+
+.thesis-container .right .one,
+.two {
+  display: flex;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 1rem;
 }
