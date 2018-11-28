@@ -5,6 +5,21 @@ html {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+.right .text-container .title {
+  color: rgb(76,76,76);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.right .text-container .content {
+  color: rgb(76,76,76);
+  font-weight: 1rem;
+}
+
+.right .one:hover, .two:hover, .three:hover {
+  background-color: lightgrey;
+}
+
 /* Header Styles */
 
 header {
@@ -39,10 +54,12 @@ header .image-container {
 
 header .text-container .title1{
   color: black;
+  font-weight: bold;
 }
 
 header .text-container .title2{
   color: darkgrey;
+  font-weight: bold;
 }
 
 .content {
@@ -57,6 +74,7 @@ header .text-container .title2{
   display: flex;
   width: 100%;
   background-color: lightgrey;
+  padding-bottom: 2rem;
 }
 
 .banner .container {
@@ -65,22 +83,20 @@ header .text-container .title2{
 
 .banner .container .image-container {
   display: flex;
-  /* border: 1px dotted black; */
 }
 
 .banner img {
   width: 675px;
   height: 500px;
-  margin: 2rem 1.5rem;
+  margin: 2rem 1.5rem 0rem 1.5rem;
 }
 
 .banner .container .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 24px;
+  margin-left: 1.5rem;
   padding-right: 12rem;
-  /* border: 1px dotted black; */
 }
 .banner h1 {
   font-weight: bold;
@@ -107,7 +123,8 @@ header .text-container .title2{
 
 .guide {
   display: flex;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 /* Guide Style Left */
@@ -115,7 +132,6 @@ header .text-container .title2{
 .guide .container-left {
   display: flex;
   flex-direction: column;
-  /* border-right: 0.5px solid lightgrey; */
 }
 
 .guide .container-left .image-container-left {
@@ -125,7 +141,7 @@ header .text-container .title2{
 .guide .container-left .image-container-left img {
   width: 675px;
   height: 400px;
-  margin: 2rem 1.5rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
 }
 
 .guide .container-left .text-container-left {
@@ -136,7 +152,7 @@ header .text-container .title2{
   font-size: 2.25rem;
   font-weight: bold;
   color: rgb(76,76,76);
-  margin: 0rem 1.5rem 1.5rem 1.5rem;
+  margin: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 .guide .container-left .text-container-left .text {
@@ -148,7 +164,8 @@ header .text-container .title2{
 
 .guide .container-left .text-container-left #title {
   margin-left: 1.5rem;
-  /* margin-bottom: 2rem; */
+  font-size: 0.75rem;
+  color: rgb(76,76,76);
 }
 
 /* Guide Style Right */
@@ -157,14 +174,7 @@ header .text-container .title2{
   border-left: 0.5px solid lightgrey;
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
   margin-left: 1rem;
-  margin-right: -1rem;
-}
-
-.right .image-container {
-  margin-top: 0rem;
 }
 
 .right .image-container img {
@@ -174,34 +184,25 @@ header .text-container .title2{
 
 }
 
-.right .two .image-container img {
-  /* margin-top: 1rem; */
-}
-
-.right .three .image-container img {
-  /* margin-top: 1rem; */
-}
-
 .right .one,
 .two,
 .three {
   display: flex;
 }
 
-.right .one:hover, .two:hover, .three:hover {
-  background-color: lightgrey;
-}
-
 .right .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 2rem;
 }
 
 .right .text-container span{
   margin-bottom: 0.5rem;
   margin-left: 1rem;
-  margin-right: 5rem;
+  padding-right: 5rem;
+  text-align: left;
+
 }
 
 .right .text-container .title {
@@ -215,6 +216,8 @@ header .text-container .title2{
 .right .text-container .link a {
   font-size: 0.75rem;
   text-decoration: none;
+  color: royalblue;
+  font-weight: 550;
 }
 
 /* Class Options Section */
@@ -292,9 +295,11 @@ header .text-container .title2{
 
 .thesis {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid lightgrey;
 }
 
-.thesis span {
+.thesis #exhibit {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -317,22 +322,46 @@ header .text-container .title2{
 #video-container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .thesis-container-left .text-container-left {
   margin-left: 1.5rem;
+  margin-bottom: 2rem;
   width: 675px;
 }
 
-/* Right Styles  */
-
-.thesis-container .right .one,
-.two {
-  display: flex;
+.thesis-container-left .text-container-left h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: rgb(76,76,76);
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
 }
+
+.thesis-container-left .text-container-left p {
+  font-size: 1rem;
+  color: rgb(76, 76, 76);
+  margin: 0rem 1.5rem 2rem 1.5rem;
+  line-height: 1.25rem;
+}
+
 
 /* Footer */
 
 footer {
-  margin-top: 1rem;
+  margin: 1rem 1.5rem 3rem 1.5rem;
+  font-size: 0.75rem;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-color: rgb(76,76,76);
+}
+
+footer nav a {
+  text-decoration: none;
+  color: rgb(76,76,76);
+  font-size: 0.75rem;
 }
