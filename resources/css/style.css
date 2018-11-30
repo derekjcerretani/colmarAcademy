@@ -44,9 +44,10 @@ header {
 
 /* Mobile Styles */
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
 
   header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
   }
@@ -66,7 +67,7 @@ header {
   .truncated-menu {
     display: block;
   }
-} */
+}
 
 header .image-container img {
   margin-left: 1.5rem;
@@ -108,7 +109,7 @@ header .text-container .title2{
 }
 
 .banner .container {
-  display: flex;
+  /* display: flex; */
 }
 
 .banner .container .image-container {
@@ -123,36 +124,35 @@ header .text-container .title2{
 
 /* Mobile Styles */
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
 
   .banner {
-    width: 400px;
-    /* display: flex; */
-    /* flex-direction: column;
-  }
-
-  .banner .container {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .banner img {
-    width: 400px;
-    height: 275px;
+    width: 100%;
+    height: 17rem;
     margin: 0rem 0rem;
   }
 
   .banner .container .text-container {
+    height: 1rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 2rem 1rem;
   }
-}  */
+}
 
 .banner .container .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 1.5rem;
+  margin: 10rem 1.5rem;
   padding-right: 12rem;
 }
 .banner h1 {
@@ -191,11 +191,13 @@ header .text-container .title2{
   flex-direction: column;
 }
 
-/* @media only screen and (max-width: 560px) {
+/* Mobile Styles */
+
+@media only screen and (max-width: 560px) {
   .guide .container-left {
     display: none;
   }
-} */
+}
 
 .guide .container-left .image-container-left {
   display: flex;
@@ -247,20 +249,20 @@ header .text-container .title2{
 
 }
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
 
   .guide .right {
-    width: 400px;
+    width: 100%;
     border-left: none;
-    /* display: flex;
-    }*/
+    display: flex;
+    }
 
 
-  /*.right .one,
+  .right .one,
   .two,
   .three {
-    /* display: flex; */
-  /*  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .guide .right .image-container img {
@@ -271,11 +273,11 @@ header .text-container .title2{
   }
 
   .guide .right .text-container {
-    /* display: flex; */
-    /*justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
-} */
+}
 
 .right .one,
 .two,
@@ -283,7 +285,6 @@ header .text-container .title2{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
 }
 
 .right .text-container {
@@ -323,12 +324,12 @@ header .text-container .title2{
   padding: 2rem 4.5rem;
 }
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
   .boxes {
     width: 400px;
     padding: 0rem 0rem;
   }
-} */
+}
 
 .boxes span{
   display: flex;
@@ -364,12 +365,12 @@ header .text-container .title2{
   height: 150px;
 }
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
 
   .class .image-container img {
     display: none;
   }
-} */
+}
 
 .class .text-container {
   display: flex;
@@ -439,17 +440,23 @@ header .text-container .title2{
   display: none;
 } */
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
 
   #video-container {
-    display: none;
+    width: 500px;
+    height: auto;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
   }
 
   .thesis-container-left .text-container-left,
   .right {
     display: none;
   }
-} */
+}
 
 .thesis-container-left .text-container-left {
   margin-left: 1.5rem;
@@ -486,7 +493,7 @@ footer {
   color: rgb(76,76,76);
 }
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
 
   footer {
     display: flex;
@@ -498,7 +505,7 @@ footer {
   footer nav a {
     display: none;
   }
-} */
+}
 
 footer nav a {
   text-decoration: none;
